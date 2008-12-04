@@ -3,7 +3,7 @@
 
 = Using IpRangeList in settings.py =
 
-There are many internal and add-on components for [http://www.djangoproject.com/ Django] that use the [http://docs.djangoproject.com/en/dev/ref/settings/#internal-ips INTERNAL_IPS] configuration setting to alter application behavior or make debugging easier. When you are developing and testing an application by yourself it's easy to add your the ip address that your web browser will be coming from to this list. When you are developing in a group or testing from many ips it can become cumbersome to add more an more ip addresses to the setting individually.
+There are many internal and add-on components for [http://www.djangoproject.com/ Django] that use the [http://docs.djangoproject.com/en/dev/ref/settings/#internal-ips INTERNAL_IPS] configuration setting to alter application behavior or make debugging easier. When you are developing and testing an application by yourself it's easy to add your the ip address that your web browser will be coming from to this list. When you are developing in a group or testing from many ips it can become cumbersome to add more and more ip addresses to the setting individually.
 
 The iptools.IpRangeList object can help by replacing the standard tuple of addresses recommended by the Django docs with an intelligent object that responds to the membership test operator _in_. This object can be configured with dotted quad IP addresses like the default INTERNAL_IPS tuple (eg. '127.0.0.1'), [http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing CIDR] block notation (eg. '127/8', '192.168/16') for entire network blocks, and/or (start, end) tuples describing an arbitrary range of IP addresses.
 
