@@ -1,3 +1,5 @@
 = Issues =
 
 The issues for the python-iptools project have moved to [https://github.com/bd808/python-iptools/issues github].
+
+Historical issues are [https://code.google.com/p/python-iptools/issues/list available for review] but will not be monitored.
